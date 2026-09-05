@@ -1,10 +1,13 @@
 import re
 import unicodedata
+## hehe TT
 import tkinter as tk
 from tkinter import scrolledtext
 
 def normalize_text(text):
     return unicodedata.normalize("NFKD", text)
+
+## paskitaan nato ug regex, joke lang - thanks Co-Pilot sa vibes ug vibe code
 
 def check_text():
     output_box.delete("1.0", tk.END)
@@ -64,12 +67,11 @@ def check_text():
         output_box.insert(tk.END, f"⏰ No time windows detected for '{user_place}'.\n")
 
 
-# GUI Setup
+# TT again (hehe)
 root = tk.Tk()
 root.title("VECO Rotational Brownout Checker")
 root.geometry("700x600")
 
-# --- USER INPUT FIRST ---
 place_frame = tk.Frame(root)
 place_frame.pack(pady=10)
 
@@ -79,11 +81,11 @@ place_label.pack(side=tk.LEFT, padx=5)
 place_entry = tk.Entry(place_frame, font=("Arial", 14), width=25)
 place_entry.pack(side=tk.LEFT, padx=5)
 
-# --- THEN THE ADVISORY LABEL BELOW ---
+# Label para murag official
 title_label = tk.Label(root, text="Paste VECO Advisory Content Below", font=("Arial", 16, "bold"))
 title_label.pack(pady=5)
 
-# --- ADVISORY TEXT BOX ---
+# define define kunohay
 input_box = scrolledtext.ScrolledText(root, wrap=tk.WORD, width=75, height=15, font=("Arial", 11))
 input_box.pack(padx=10, pady=10)
 
