@@ -1,23 +1,35 @@
-VECO Rotational Brownout Checker
+# VECO Rotational Brownout Checker
 
-A lightweight Python desktop application that helps users quickly identify rotational brownout schedules for any barangay/place mentioned in VECO advisories.
+A lightweight Python desktop application that helps users quickly identify **rotational brownout schedules** for any barangay/place mentioned in VECO advisories.
 
 The app allows you to:
 
-Paste the full VECO advisory text
+- Paste the full VECO advisory text  
+- Enter any barangay/place (e.g., *Lahug, Apas, Banilad, Talamban, Camputhaw*)  
+- Automatically extract:
+  - All matching **brownout time windows**
+  - The corresponding **tinyurl map links**
+  - The **date** of the advisory  
+- View results in a clean GUI  
+- Optionally build a standalone `.exe` using PyInstaller  
 
-Enter any barangay/place (e.g., Lahug, Apas, Banilad, Talamban, Camputhaw)
+---
 
-Automatically extract:
+## Features
 
-All matching brownout time windows
+- **User‑input barangay search:** Type any place and get all matching brownout entries.  
+- **Unicode‑safe parsing:** Handles stylized VECO text like `𝟐:𝟎𝟎𝐏𝐌` by normalizing to ASCII.  
+- **Multiple time windows:** Lists all time windows where the barangay appears.  
+- **Map link extraction:** Shows the tinyurl map link for each matching block.  
+- **Simple GUI:** Built with Tkinter, no external GUI frameworks.  
+- **EXE‑ready:** Works with PyInstaller for easy distribution.
 
-The corresponding tinyurl map links
+---
 
-The date of the advisory
+## Installation
 
-View results in a clean GUI
+### 1. Clone the repository
 
-Export as a standalone .exe using PyInstaller
-
-This tool is designed for convenience, especially during periods of frequent rotational brownouts.
+```bash
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>
