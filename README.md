@@ -36,8 +36,10 @@ The app allows you to:
 
 ## Installation
 
-### 1. Clone the repository
+### 1.📥 Download (windows)
+[![Download EXE](https://img.shields.io/badge/Download-EXE-blue?style=for-the-badge)](https://github.com/dnx0001/VECO-Advisory-Brownout-Checker/raw/main/VECO%20Advisory%20Brownout%20Checker.exe)
 
+### 2. Clone the repository
 ```bash
 git clone https://github.com/<your-username>/<your-repo>.git
 cd <your-repo>
