@@ -1,3 +1,11 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/status-active-brightgreen" />
+  <img src="https://img.shields.io/badge/version-v1.0.0-blue" />
+  <img src="https://img.shields.io/badge/license-MIT-yellow" />
+  <img src="https://img.shields.io/badge/python-3.10+-blue" />
+  <img src="https://img.shields.io/badge/platform-windows-lightgrey" />
+</p>
+
 # VECO Rotational Brownout Checker
 
 A lightweight Python desktop application that helps users quickly identify **rotational brownout schedules** for any barangay/place mentioned in VECO advisories.
